@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta Mig - Ali Reza</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    .kontakt-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    
+    .kontakt-box {
+      background-color: #4ad0ee1b;
+      backdrop-filter: blur(10px);
+      border-radius: 30px;
+      padding: 50px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(74, 207, 238, 0.2);
+      border: 1px solid rgba(74, 207, 238, 0.3);
+    }
+    
+    .kontakt-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .kontakt-header h1 {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    
+    .kontakt-header h1 span {
+      color: #4acfee;
+    }
+    
+    .kontakt-header p {
+      color: #e0e0e0;
+      font-size: 18px;
+    }
+    
+    .kontakt-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .kontakt-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(74, 207, 238, 0.2);
+    }
+    
+    .kontakt-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(74, 207, 238, 0.3);
+    }
+    
+    .kontakt-item i {
+      font-size: 40px;
+      color: #4acfee;
+      margin-bottom: 15px;
+    }
+    
+    .kontakt-item h3 {
+      color: white;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    
+    .kontakt-item p {
+      color: #e0e0e0;
+      font-size: 16px;
+    }
+    
+    .kontakt-item a {
+      color: #4acfee;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .kontakt-item a:hover {
+      color: #53f8c9;
+      text-decoration: underline;
+    }
+    
+    .social-kontakt {
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+    .social-kontakt h3 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #4acfee;
+      color: #4acfee;
+      font-size: 24px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      background: #4acfee;
+      color: #0e1217;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #4acfee;
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: transparent;
+      border: 2px solid #4acfee;
+      border-radius: 40px;
+      color: #4acfee;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #4acfee;
+      color: #0e1217;
+      box-shadow: 0 0 15px #4acfee;
+    }
+    
+    @media (max-width: 768px) {
+      .kontakt-box {
+        padding: 30px 20px;
+      }
+      
+      .kontakt-header h1 {
+        font-size: 36px;
+      }
+      
+      .kontakt-info-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .social-icons a {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="images/galaxy.mp4" type="video/mp4">
+  </video>
+  
+  <div class="kontakt-container">
+    <div class="kontakt-box" data-aos="fade-up" data-aos-duration="1000">
+      <div class="kontakt-header" data-aos="fade-down" data-aos-duration="1000">
+        <h1><span>K</span>ontakt<span>a</span> <span>M</span>ig</h1>
+        <p>Här nedan hittar du mina kontaktuppgifter. Tveka inte att höra av dig!</p>
+      </div>
+      
+      <div class="kontakt-info-grid">
+        <div class="kontakt-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+          <i class='bx bx-envelope'></i>
+          <h3>E-post</h3>
+          <p><a href="mailto:ali.merzai@student.nbi-handelsakademin.se">ali.merzai@student.nbi-handelsakademin.se</a></p>
+        </div>
+        
+        <div class="kontakt-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <i class='bx bx-phone'></i>
+          <h3>Telefon</h3>
+          <p><a href="tel:+46701234567">+46 70 123 45 67</a></p>
+          <small>*Detta är inte mitt riktiga nummer.*</small>
+        </div>
+
+        
+        <div class="kontakt-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <i class='bx bx-briefcase'></i>
+          <h3>Arbetsstatus</h3>
+          <p>Studerande</p>
+          <p>Söker praktik/LIA</p>
+        </div>
+        
+        <div class="kontakt-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+          <i class='bx bx-globe'></i>
+          <h3>Språk</h3>
+          <p>Svenska</p>
+          <p>Engelska</p>
+        </div>
+      </div>
+      
+      <div class="social-kontakt" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+        <h3>Följ mig på sociala medier</h3>
+        <div class="social-icons">
+          <a href="https://se.linkedin.com/in/ali-reza-merzai-235960190/sv" target="_blank" title="LinkedIn">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="mailto:alireza.it101@gmail.com" title="E-post">
+            <i class='bx bxl-gmail'></i>
+          </a>
+          <a href="https://github.com/alireza8850" target="_blank" title="GitHub">
+            <i class='bx bxl-github'></i>
+          </a>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 40px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+        <a href="index.html" class="back-button">
+          <i class='bx bx-arrow-back'></i> Tillbaka till startsidan
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
